@@ -1,0 +1,26 @@
+[
+  {
+    "keywords": ["fee", "price", "cost"],
+    "answer": "Our class fees vary by grade and subject. Please contact us at 9811743645 or visit us for detailed fee structures."
+  },
+  {
+    "keywords": ["timing", "hours", "schedule"],
+    "answer": "We are open Monday to Saturday from 9:00 AM to 8:00 PM. Batches are scheduled depending on the grade."
+  },
+  {
+    "keywords": ["address", "location", "where"],
+    "answer": "We are located at B-28, Kardam Farm, Johri Pur, Delhi - 110094."
+  },
+  {
+    "keywords": ["english", "spoken"],
+    "answer": "Yes, we have a special focus on Spoken English and offer dedicated batches starting in April."
+  },
+  {
+    "keywords": ["trial", "demo"],
+    "answer": "We offer a 3-Day Free Trial class for new students. Contact us at 9811743645 to book your slot."
+  },
+  {
+    "keywords": ["classes", "subjects", "grade", "teach"],
+    "answer": "We provide coaching for students from 1st to 12th grade across all major subjects."
+  }
+]
