@@ -11,7 +11,7 @@ export default function Footer() {
           <div>
             <h3 className="text-white text-lg font-bold mb-4">Positive Academy</h3>
             <p className="text-sm leading-relaxed">
-              Empowering students with quality education and excellent coaching since 2014. Special focus on English
+              Empowering students with quality education and excellent coaching since 2002. Special focus on English
               and comprehensive subject knowledge.
             </p>
           </div>
@@ -64,8 +64,8 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">Business Hours</h4>
             <ul className="space-y-2 text-sm">
-              <li>Mon - Sat: 9:00 AM - 8:00 PM</li>
-              <li>Sunday: Closed</li>
+              <li>Mon - Fri: 9:00 AM - 8:00 PM</li>
+              <li>Weekends: Closed</li>
               <li className="pt-4">
                 <a
                   href="https://wa.me/919811743645"

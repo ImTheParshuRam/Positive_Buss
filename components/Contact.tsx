@@ -100,7 +100,7 @@ export default function Contact() {
         templateParams,
         publicKey
       )
-      
+
       toast.success('We will contact you soon', {
         style: { background: '#10b981', color: '#fff', border: 'none' }
       })
@@ -170,7 +170,7 @@ export default function Contact() {
             <div className="bg-white rounded-xl shadow-md overflow-hidden h-64 md:h-80 w-full relative">
               <iframe
                 title="Positive Academy Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.7526447433886!2d77.29534!3d28.63748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s0x0!3m2!1d28.63748!2d77.29534!5e0!3m2!1sen!2sin!4v1"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d743.2791991686022!2d77.28751530030937!3d28.713519643065734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfbf88ed22fcd%3A0xf18647e00ef537b6!2sB-28%2C%20Kardam%20Farm%20Colony%2C%20Johripur%20Extension%2C%20Johripur%2C%20Delhi%2C%20Ghaziabad%2C%20Uttar%20Pradesh%20201102!5e1!3m2!1sen!2sin!4v1773860321690!5m2!1sen!2sin"
                 className="absolute top-0 left-0 w-full h-full border-0"
                 allowFullScreen={true}
                 loading="lazy"
