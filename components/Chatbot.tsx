@@ -69,7 +69,7 @@ export default function Chatbot() {
 
       {/* Chat Window */}
       <div
-        className={`fixed bottom-24 right-5 w-[90vw] sm:w-[350px] bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden transform transition-all duration-300 origin-bottom-right z-50 flex flex-col ${isOpen ? 'scale-100 opacity-100' : 'scale-0 opacity-0 pointer-events-none'}`}
+        className={`fixed bottom-24 right-5 w-[90vw] sm:w-[350px] bg-white dark:bg-gray-900 rounded-2xl shadow-2xl border border-gray-100 dark:border-gray-800 overflow-hidden transform transition-all duration-300 origin-bottom-right z-50 flex flex-col ${isOpen ? 'scale-100 opacity-100' : 'scale-0 opacity-0 pointer-events-none'}`}
         style={{ maxHeight: 'calc(100vh - 120px)' }}
       >
         {/* Header */}
@@ -84,12 +84,12 @@ export default function Chatbot() {
         </div>
 
         {/* Messages */}
-        <div className="flex-1 p-4 overflow-y-auto bg-gray-50 flex flex-col gap-3 min-h-[300px] max-h-[400px]">
+        <div className="flex-1 p-4 overflow-y-auto bg-gray-50 dark:bg-gray-900/50 flex flex-col gap-3 min-h-[300px] max-h-[400px]">
           {messages.map((msg) => (
             <div
               key={msg.id}
               className={`max-w-[85%] p-3 rounded-2xl text-sm ${
-                msg.sender === 'user' ? 'bg-blue-600 text-white rounded-br-none self-end' : 'bg-white border border-gray-200 text-gray-800 rounded-bl-none self-start shadow-sm'
+                msg.sender === 'user' ? 'bg-blue-600 dark:bg-blue-700 text-white rounded-br-none self-end' : 'bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-200 rounded-bl-none self-start shadow-sm'
               }`}
             >
               {msg.text}
@@ -99,13 +99,13 @@ export default function Chatbot() {
         </div>
 
         {/* Input */}
-        <form onSubmit={handleSubmit} className="p-3 bg-white border-t border-gray-100 flex gap-2">
+        <form onSubmit={handleSubmit} className="p-3 bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800 flex gap-2">
           <input
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
             placeholder="Type your question..."
-            className="flex-1 min-h-[44px] bg-gray-50 border border-gray-200 rounded-full px-4 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition-all"
+            className="flex-1 min-h-[44px] bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-full px-4 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white dark:focus:bg-gray-900 dark:text-white transition-all"
           />
           <button
             type="submit"

@@ -31,18 +31,18 @@ export default function Testimonials() {
   ]
 
   return (
-    <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-white">
+    <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-white dark:bg-transparent transition-colors">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Student Testimonials</h2>
-          <p className="text-gray-600 text-lg">What our students say about us</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Student Testimonials</h2>
+          <p className="text-gray-600 dark:text-gray-400 text-lg">What our students say about us</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl p-8 border border-blue-100"
+              className="bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-800 dark:to-blue-900/20 rounded-xl p-8 border border-blue-100 dark:border-blue-900/50 shadow-sm"
             >
               <div className="flex items-center mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
@@ -52,11 +52,11 @@ export default function Testimonials() {
                 ))}
               </div>
 
-              <p className="text-gray-700 mb-6 italic leading-relaxed">"{testimonial.message}"</p>
+              <p className="text-gray-700 dark:text-gray-300 mb-6 italic leading-relaxed">"{testimonial.message}"</p>
 
-              <div className="border-t border-blue-200 pt-4">
-                <p className="font-semibold text-gray-900">{testimonial.name}</p>
-                <p className="text-gray-600 text-sm">{testimonial.class}</p>
+              <div className="border-t border-blue-200 dark:border-gray-700 pt-4">
+                <p className="font-semibold text-gray-900 dark:text-white">{testimonial.name}</p>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">{testimonial.class}</p>
               </div>
             </div>
           ))}

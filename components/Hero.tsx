@@ -2,19 +2,19 @@
 
 export default function Hero() {
   return (
-    <section id="home" className="bg-gradient-to-br from-blue-50 to-teal-50 py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+    <section id="home" className="bg-gradient-to-br from-blue-50 to-teal-50 dark:from-blue-900/20 dark:to-teal-900/20 py-16 md:py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center space-y-6">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 text-balance">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white text-balance">
             Best Coaching Classes in Johri Pur for 1st–12th
           </h1>
           
-          <p className="text-lg md:text-xl text-gray-700">
+          <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300">
             Special Focus on English | Online & Offline Batches Available
           </p>
 
-          <div className="bg-white bg-opacity-80 backdrop-blur-sm border-l-4 border-blue-600 rounded-lg p-4 md:p-6 inline-block max-w-2xl mx-auto">
-            <p className="text-lg md:text-xl font-semibold text-blue-600">
+          <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border-l-4 border-blue-600 dark:border-blue-500 rounded-lg p-4 md:p-6 inline-block max-w-2xl mx-auto shadow-sm dark:shadow-gray-900/50">
+            <p className="text-lg md:text-xl font-semibold text-blue-600 dark:text-blue-400">
               🎯 Spoken English Batches Starting April | 3-Day Free Trial
             </p>
           </div>
